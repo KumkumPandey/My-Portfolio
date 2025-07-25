@@ -137,7 +137,7 @@ export default function Projects() {
               className="hover:bg-primary hover:text-primary-foreground transition-all duration-300"
               asChild
             >
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/KumkumPandey" target="_blank" rel="noopener noreferrer">
                 <Github className="mr-2 h-5 w-5" />
                 View All Projects
               </a>
