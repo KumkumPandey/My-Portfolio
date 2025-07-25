@@ -17,7 +17,7 @@ const projects = [
   },
   {
     title: "Instagram-reach analyser",
-    description: "Track your daily Instagram actions, from posts to stories. Our app provides detailed visual graphs to analyze your reach and engagement, helping you understand and boost your performance.g.",
+    description: "Track your daily Instagram actions, from posts to stories. Our app provides detailed visual graphs to analyze your reach and engagement, helping you understand and boost your performance.",
     image: project2,
     technologies: ["React", "TypeScript", "HTML", "CSS", "JavaScript", "Python", "Tailwind CSS"],
     githubUrl: "https://github.com/KumkumPandey/Instagram-reach-analyser",
