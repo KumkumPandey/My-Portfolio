@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -17,7 +19,7 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 250 84% 54%;
+    --primary: 280 100% 70%;
     --primary-foreground: 210 40% 98%;
 
     --secondary: 210 40% 96.1%;
@@ -26,7 +28,7 @@ All colors MUST be HSL.
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 142 76% 36%;
+    --accent: 45 100% 60%;
     --accent-foreground: 210 40% 98%;
 
     --destructive: 0 84.2% 60.2%;
@@ -36,10 +38,10 @@ All colors MUST be HSL.
     --input: 214.3 31.8% 91.4%;
     --ring: 250 84% 54%;
 
-    --gradient-primary: linear-gradient(135deg, hsl(250 84% 54%), hsl(142 76% 36%));
-    --gradient-hero: linear-gradient(135deg, hsl(250 84% 54% / 0.1), hsl(142 76% 36% / 0.1));
-    --shadow-glow: 0 0 40px hsl(250 84% 54% / 0.3);
-    --shadow-card: 0 10px 30px -10px hsl(250 84% 54% / 0.2);
+    --gradient-primary: linear-gradient(135deg, hsl(280 100% 70%), hsl(45 100% 60%));
+    --gradient-hero: linear-gradient(135deg, hsl(280 100% 70% / 0.15), hsl(45 100% 60% / 0.15));
+    --shadow-glow: 0 0 40px hsl(280 100% 70% / 0.4);
+    --shadow-card: 0 10px 30px -10px hsl(280 100% 70% / 0.3);
 
     --radius: 0.75rem;
 
@@ -70,7 +72,7 @@ All colors MUST be HSL.
     --popover: 222.2 84% 4.9%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: 250 84% 54%;
+    --primary: 280 100% 70%;
     --primary-foreground: 222.2 47.4% 11.2%;
 
     --secondary: 217.2 32.6% 17.5%;
@@ -79,7 +81,7 @@ All colors MUST be HSL.
     --muted: 217.2 32.6% 17.5%;
     --muted-foreground: 215 20.2% 65.1%;
 
-    --accent: 142 76% 36%;
+    --accent: 45 100% 60%;
     --accent-foreground: 210 40% 98%;
 
     --destructive: 0 62.8% 30.6%;
@@ -89,10 +91,10 @@ All colors MUST be HSL.
     --input: 217.2 32.6% 17.5%;
     --ring: 250 84% 54%;
 
-    --gradient-primary: linear-gradient(135deg, hsl(250 84% 54%), hsl(142 76% 36%));
-    --gradient-hero: linear-gradient(135deg, hsl(250 84% 54% / 0.2), hsl(142 76% 36% / 0.2));
-    --shadow-glow: 0 0 40px hsl(250 84% 54% / 0.4);
-    --shadow-card: 0 10px 30px -10px hsl(250 84% 54% / 0.3);
+    --gradient-primary: linear-gradient(135deg, hsl(280 100% 70%), hsl(45 100% 60%));
+    --gradient-hero: linear-gradient(135deg, hsl(280 100% 70% / 0.25), hsl(45 100% 60% / 0.25));
+    --shadow-glow: 0 0 40px hsl(280 100% 70% / 0.5);
+    --shadow-card: 0 10px 30px -10px hsl(280 100% 70% / 0.4);
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
@@ -109,7 +111,39 @@ All colors MUST be HSL.
     @apply border-border;
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  .animate-delay-100 {
+    animation-delay: 0.1s;
+  }
+  .animate-delay-200 {
+    animation-delay: 0.2s;
+  }
+  .animate-delay-300 {
+    animation-delay: 0.3s;
+  }
+  .animate-delay-500 {
+    animation-delay: 0.5s;
+  }
+  
+  .text-shadow {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .hover-lift {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .hover-lift:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
   }
 }
